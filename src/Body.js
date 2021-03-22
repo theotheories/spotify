@@ -3,7 +3,7 @@ import "./Body.css";
 
 function Body() {
     return (
-        <div className="Body">
+        <div className="body">
             <h1>body here</h1>
         </div>
     )

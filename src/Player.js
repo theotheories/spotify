@@ -6,7 +6,7 @@ import Sidebar from './Sidebar';
 
 function Player({ spotify }) {
     return (
-        <div className="Player">
+        <div className="player">
             <div className="player__body">
             <Sidebar />
             <Body />
