@@ -1,6 +1,7 @@
 export const initialState = {
     user: null,
-    token: null,
+    //change this later 
+    token: "BQD7kiW1xOElMd2TaH7lNasUtBA4vJT2rYOXlxfVZCbuBGdkJpeD8C-pt-V7j3nqppzQJWaA8n4maQ1IQPg5RJlo6gc0XJCb3oPV0lMP21EVFnOD3c8UW760h6GBIVTK9voTedHdQ-Rb_JKW9pTgWp58upNn3ulh4Q",
     playlists: [],
     playing: false,
     item: null,
