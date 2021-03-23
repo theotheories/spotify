@@ -1,11 +1,31 @@
 .sidebar {
 	height: 100vh;
 	color: white;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px 65px 10px;
 	flex: 0.2;
 	min-width: 230px;
 	background-color: #040404;
+	overflow-y: overlay;
+}
+
+.sidebar::-webkit-scrollbar {
+	width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+	background-color: #040404;
+}
+
+.sidebar::-webkit-scrollbar-track:hover {
+	background: #282828;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+	background-color: #808080;
+	border-radius: 20px;
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+	background-color: #969696;
 }
 
 .sidebar > hr {
