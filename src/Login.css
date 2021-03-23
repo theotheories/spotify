@@ -2,22 +2,22 @@
  good animations to play with explained by this guy^ */
 
 .login {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    background: linear-gradient(45deg, darkgreen, black);
-  }
-  
-  .login > img {
-    width: auto;
-    height: 200px;
-  }
-  
-  .login > a {
-    padding: 20px;
-    border-radius: 99px;
-    font-weight: 600;
-    color: black;
-    text-decoration: none;
-    background-color: #1ED760;
-  }
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background: linear-gradient(45deg, darkgreen, black);
+}
+
+.login > img {
+	width: auto;
+	height: 200px;
+}
+
+.login > a {
+	padding: 20px;
+	border-radius: 99px;
+	font-weight: 600;
+	color: black;
+	text-decoration: none;
+	background-color: #1ed760;
+}
