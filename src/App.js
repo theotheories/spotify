@@ -36,7 +36,7 @@ function App() {
           playlists,
         });
       });
-      spotify.getPlaylist("37i9dQZF1E34Ucml4HHx1w").then((playlist) => {
+      spotify.getPlaylist().then((playlist) => {
         dispatch({
           type: "SET_DISCOVER_WEEKLY",
           discover_weekly: playlist,
