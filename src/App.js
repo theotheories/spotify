@@ -15,13 +15,14 @@ function App() {
 		const hash = getTokenFromUrl();
 		window.location.hash = "";
 		const _token = hash.access_token;
+		// prettier-ignore
+		const numberOfPlaylists = { "limit": 50, };
 
 		if (_token) {
 			dispatch({
 				type: "SET_TOKEN",
 				token: _token,
 			});
-			console.log("[token]", token);
 
 			spotify.setAccessToken(_token);
 
@@ -32,18 +33,21 @@ function App() {
 				});
 			});
 
-			spotify.getUserPlaylists().then((playlists) => {
+			spotify.getUserPlaylists(numberOfPlaylists).then((playlists) => {
 				dispatch({
 					type: "SET_PLAYLISTS",
 					playlists,
 				});
 			});
-			spotify.getPlaylist("37i9dQZEVXcNeJBWeboyQ6").then((playlist) => {
-				dispatch({
-					type: "SET_DISCOVER_WEEKLY",
-					discover_weekly: playlist,
-				});
-			});
+
+			spotify.searchPlaylists("Discover Weekly", { limit: 1 }).then((data) =>
+				spotify.getPlaylist(data?.playlists?.items[0]?.id).then((playlist) => {
+					dispatch({
+						type: "SET_DISCOVER_WEEKLY",
+						discover_weekly: playlist,
+					});
+				})
+			);
 		}
 	}, []);
 

@@ -18,5 +18,9 @@
 .sidebarOption > p {
 	margin-top: 10px;
 	margin-left: 20px;
+	padding-right: 20px;
 	font-size: 14px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
