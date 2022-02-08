@@ -6,6 +6,7 @@
 	place-items: center;
 	height: 100vh;
 	background: linear-gradient(45deg, darkgreen, black);
+	background-size: cover;
 }
 
 .login > img {
